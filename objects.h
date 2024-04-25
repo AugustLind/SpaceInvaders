@@ -31,5 +31,12 @@ public:
 
 
 class Enemies{
+    int posX;
+    int posY;
 
+public:
+
+    Enemies(int pos1, int pos2) : posX{pos1}, posY{pos2} {};
+    TDT4102::Point getPosition();
+    void moveDown();
 };

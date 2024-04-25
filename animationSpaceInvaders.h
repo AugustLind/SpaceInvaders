@@ -10,6 +10,10 @@ class SpaceInvadersGame : public TDT4102::AnimationWindow {
     static constexpr int numRows = 10;
     Player player;
     std::vector<Shots> shots;
+    std::vector<std::vector<Enemies>> enemies;
+    int rowsEnemies = 0;
+    int totalRows = 5;
+    int enemieSize = 30;
 
     
 
@@ -22,5 +26,8 @@ public:
     void playerShot();
     void drawShot();
     void moveShot();
-
+    void createEnemies();
+    void drawEnemies();
+    void moveEnemies();
+    void checkEnemiesHit();
 };

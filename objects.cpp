@@ -31,3 +31,11 @@ TDT4102::Point Shots::getPosition(){
 int Shots::getLen(){
     return lenShot;
 }
+
+TDT4102::Point Enemies::getPosition(){
+    return {posX, posY};
+}
+
+void Enemies::moveDown(){
+    posY += 45;
+}
