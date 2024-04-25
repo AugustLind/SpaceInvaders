@@ -39,3 +39,15 @@ TDT4102::Point Enemies::getPosition(){
 void Enemies::moveDown(){
     posY += 45;
 }
+
+void Shots::setHidden(){
+    visible = false;
+}
+
+bool Shots::getVisible(){
+    return visible;
+}
+
+void Player::loseLife(){
+    lives -= 1;
+}
